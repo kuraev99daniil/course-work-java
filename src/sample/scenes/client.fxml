@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="550.0" minWidth="450.0" prefHeight="550.0" prefWidth="450.0" vbarPolicy="NEVER" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.registration.ClientController">
+    <content>
+        <VBox>
+            <children>
+            <GridPane>
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Клиент" textAlignment="CENTER" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+            </GridPane>
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="445.0">
+               <children>
+                      <ImageView fx:id="photoImageView" fitHeight="400.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                          <VBox.margin>
+                              <Insets />
+                          </VBox.margin>
+                      </ImageView>
+               </children>
+            </VBox>
+                <TextField fx:id="surnameTextField">
+                    <VBox.margin>
+                        <Insets left="8.0" right="8.0" top="8.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="nameTextField" layoutX="10.0" layoutY="410.0">
+                    <VBox.margin>
+                        <Insets left="8.0" right="8.0" top="8.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="middleNameTextView" layoutX="10.0" layoutY="436.0">
+                    <VBox.margin>
+                        <Insets left="8.0" right="8.0" top="8.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="dateOfBirthTextView" layoutX="10.0" layoutY="461.0">
+                    <VBox.margin>
+                        <Insets left="8.0" right="8.0" top="8.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="passportSeriesTextView" layoutX="10.0" layoutY="487.0">
+                    <VBox.margin>
+                        <Insets left="8.0" right="8.0" top="8.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="numberPassportTextField" layoutX="10.0" layoutY="512.0">
+                    <VBox.margin>
+                        <Insets left="8.0" right="8.0" top="8.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="addressTextView" layoutX="10.0" layoutY="538.0">
+                    <VBox.margin>
+                        <Insets left="8.0" right="8.0" top="8.0" />
+                    </VBox.margin>
+                </TextField>
+                <Button fx:id="nextButton" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" text="Далее">
+                    <VBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </content>
+</ScrollPane>

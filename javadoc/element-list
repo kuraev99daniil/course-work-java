@@ -1,0 +1,14 @@
+sample
+sample.base
+sample.controllers
+sample.controllers.detail
+sample.controllers.registration
+sample.database
+sample.database.tables
+sample.enums
+sample.model
+sample.model.converter
+sample.model.table
+sample.navigation
+sample.util
+sample.view.table_view
